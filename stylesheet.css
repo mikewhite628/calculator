@@ -1,0 +1,134 @@
+#container{
+
+    
+}
+.calc {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    width: 30vw;
+    height: 60vh;
+    border: 1px solid black;
+    flex-wrap: wrap;
+}
+
+.screen {
+    border: 1px solid black;
+    width: 26vw;
+    height: 12vh;
+    margin-top: 15px;
+    text-align: center;
+    text-overflow: clip;
+    
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(3,auto);
+    justify-items: center;
+    align-content: space-around;
+    border: 1px solid black;
+    height: 38vh;
+    width: 20vw;  
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+.button1{
+    border: 1px solid black;
+    height: 12vh;
+    width: 6vw;  
+}
+.button2{
+    border: 1px solid black;
+    height: 12vh;
+    width: 6vw;  
+}
+.button3{
+    border: 1px solid black;
+    height: 12vh;
+    width: 6vw;  
+}
+.button4{
+    border: 1px solid black;
+    height: 12vh;
+    width: 6vw;  
+}
+.button5{
+    border: 1px solid black;
+    height: 12vh;
+    width: 6vw;  
+}
+.button6{
+    border: 1px solid black;
+    height: 12vh;
+    width: 6vw;  
+}
+.button7{
+    border: 1px solid black;
+    height: 12vh;
+    width: 6vw;  
+}
+.button8{
+    border: 1px solid black;
+    height: 12vh;
+    width: 6vw;  
+}
+.button9{
+    border: 1px solid black;
+    height: 12vh;
+    width: 6vw;  
+}
+
+.ops {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    border: 1px solid black;
+    height: 38vh;
+    width: 5vw; 
+    margin-left: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.op-subtract {
+    border: 1px solid black;
+    height: 6vh;
+    width: 4vw; 
+    margin-left: 3px;
+}
+
+.op-multiply {
+    border: 1px solid black;
+    height: 6vh;
+    width: 4vw; 
+    margin-left: 3px;
+}
+
+.op-divide {
+    border: 1px solid black;
+    height: 6vh;
+    width: 4vw; 
+    margin-left: 3px;
+}
+
+.op-add {
+    border: 1px solid black;
+    height: 12vh;
+    width: 4vw; 
+    margin-left: 3px;
+}
+
+.swagbar {
+    border: 1px solid black;
+    height: 3vh;
+    width: 26vw; 
+    margin-left: 3px;
+    font-size: 20px;
+    text-align: center;
+}
