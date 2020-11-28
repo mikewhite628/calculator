@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
+body {
+    font-family: 'Lobster Two', sans-serif;
+}
+
 #container{
 
     
@@ -13,15 +19,25 @@
     flex-wrap: wrap;
 }
 
+.cool-screen {
+    margin: auto;
+    margin-bottom: -150px;
+    margin-top: 80px;
+    border: 1px solid black;
+    width: 30vw;
+    height: 6vh;
+}
+
 .screen {
     border: 1px solid black;
     width: 26vw;
     height: 12vh;
     margin-top: 15px;
     text-align: center;
-    text-overflow: clip;
     
 }
+
+
 
 .buttons {
     display: grid;
@@ -39,50 +55,67 @@
 
 .button1{
     border: 1px solid black;
-    height: 12vh;
+    height: 8vh;
     width: 6vw;  
 }
 .button2{
     border: 1px solid black;
-    height: 12vh;
+    height: 8vh;
     width: 6vw;  
 }
 .button3{
     border: 1px solid black;
-    height: 12vh;
+    height: 8vh;
     width: 6vw;  
 }
 .button4{
     border: 1px solid black;
-    height: 12vh;
+    height: 8vh;
     width: 6vw;  
 }
 .button5{
     border: 1px solid black;
-    height: 12vh;
+    height: 8vh;
     width: 6vw;  
 }
 .button6{
     border: 1px solid black;
-    height: 12vh;
+    height: 8vh;
     width: 6vw;  
 }
 .button7{
     border: 1px solid black;
-    height: 12vh;
+    height: 8vh;
     width: 6vw;  
 }
 .button8{
     border: 1px solid black;
-    height: 12vh;
+    height: 8vh;
     width: 6vw;  
 }
 .button9{
     border: 1px solid black;
-    height: 12vh;
+    height: 8vh;
+    width: 6vw;  
+}
+.button0{
+    border: 1px solid black;
+    height: 8vh;
     width: 6vw;  
 }
 
+.clear {
+    border: 1px solid black;
+    width: 6vw;
+    height: 8vh;
+    font-size: 14px;
+}
+
+.equals {
+    border: 1px solid black;
+    width: 6vw;
+    height: 8vh;
+}
 .ops {
     display: flex;
     flex-direction: column;
@@ -123,6 +156,7 @@
     width: 4vw; 
     margin-left: 3px;
 }
+
 
 .swagbar {
     border: 1px solid black;
