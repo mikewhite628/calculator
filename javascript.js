@@ -6,6 +6,8 @@ const clear = document.querySelector('.clear')
 const coolScreen = document.querySelector('.cool-screen')
 const calc = document.querySelector('.calc')
 const backspace = document.querySelector('.swagbar')
+const theScreens = document.querySelector('.the-screens')
+const operators = ['+', '-', 'x', '/']
 let a;
 let b;
 let op;
@@ -13,7 +15,8 @@ let selected;
 let c
 
 calc.addEventListener('click', (e) => {
-    if (e.target !== clear && e.target !== solve && e.target !== display && e.target !== backspace){
+    if (e.target !== clear && e.target !== solve && e.target !== display && e.target !== backspace && e.target !== theScreens
+        && e.target !== coolScreen){
     coolScreen.innerHTML += `${e.target.innerHTML}`
     } else if (e.target == solve && c !== undefined){
         coolScreen.innerHTML = coolScreen.innerHTML
@@ -21,7 +24,7 @@ calc.addEventListener('click', (e) => {
 })
 
 backspace.addEventListener('click', (e) => {
-    if (c === undefined && op === undefined) {
+    if (c === undefined) {
         coolScreen.innerHTML = coolScreen.innerHTML.substring(0, coolScreen.innerHTML.length-1)
         display.innerHTML = display.innerHTML.substring(0, display.innerHTML.length-1)
        
@@ -39,24 +42,21 @@ numbers.addEventListener('click', (e) => {
 
 ops.addEventListener('click', (e) => {
     if (a === undefined){
-        a = parseInt(display.innerHTML)
+        a = parseFloat(display.innerHTML)
         op = e.target.className
         display.innerHTML = ''
-        e.target.style.color = 'red'
     } else if (c === undefined){
-        b = parseInt(display.innerHTML)
+        b = parseFloat(display.innerHTML)
         operate(a,op,b)
         console.log(a ,b ,op, c)
         op = e.target.className
         display.innerHTML = ''
-        e.target.style.color = 'red'  
     } else {
-        b = parseInt(display.innerHTML)
+        b = parseFloat(display.innerHTML)
         operate(c,op,b)
         console.log(a, b, op, c)
         op = e.target.className
         display.innerHTML = ''
-        e.target.style.color = 'red'  
     }
 
 })
@@ -65,10 +65,10 @@ solve.addEventListener('click', (e) => {
     if (a === undefined) {
         display.innerHTML = display.innerHTML
     } else if (c === undefined) {
-    b = parseInt(display.innerHTML)
+    b = parseFloat(display.innerHTML)
     display.innerHTML = operate(a,op,b)
     } else {
-        b = parseInt(display.innerHTML)
+        b = parseFloat(display.innerHTML)
     display.innerHTML = operate(c,op,b)
     }
     op = undefined

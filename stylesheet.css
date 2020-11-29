@@ -13,156 +13,162 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 150px;
-    width: 30vw;
-    height: 60vh;
-    border: 1px solid black;
+    width: 325px;
+    height: 520px;
+    border: 5px solid black;
+    border-radius: 10px;
     flex-wrap: wrap;
+    box-shadow: 5px 10px 10px;
+    background-color: #00b4db;
+    transition-duration: 1ms;
+    
+}
+
+.the-screens {
+    border: 5px solid black;
+    width: 280px;
+    height: 140px;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 34px;
+    word-wrap: break-word;
+    background-color: ivory;
+
 }
 
 .cool-screen {
-    margin: auto;
-    margin-bottom: -150px;
-    margin-top: 80px;
-    border: 1px solid black;
-    width: 30vw;
-    height: 6vh;
+    height: 30px;
+    font-size: 20px;
+    word-wrap: break-word;
+    padding-bottom: 12px;
+    background-color: ivory;
+    text-align: left; 
 }
 
+
+
+
 .screen {
-    border: 1px solid black;
-    width: 26vw;
-    height: 12vh;
-    margin-top: 15px;
-    text-align: center;
-    
+    height: 92px;
+    font-size: 34px;
+    word-wrap: break-word;
+    background-color: ivory;
+    text-align: end;
 }
 
 
 
 .buttons {
     display: grid;
-    grid-template-columns: repeat(3,auto);
-    grid-template-rows: repeat(3,auto);
+    grid-template-columns: repeat(3,auto,auto);
+    grid-template-rows: repeat(3,auto, auto);
     justify-items: center;
     align-content: space-around;
-    border: 1px solid black;
-    height: 38vh;
-    width: 20vw;  
+    border: 4px solid black;
+    height: 280px;
+    width: 200px;  
     text-align: center;
     font-size: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+
+
+   
     
 }
 
-.button1{
+.btn {
     border: 1px solid black;
-    height: 8vh;
-    width: 6vw;  
-}
-.button2{
-    border: 1px solid black;
-    height: 8vh;
-    width: 6vw;  
-}
-.button3{
-    border: 1px solid black;
-    height: 8vh;
-    width: 6vw;  
-}
-.button4{
-    border: 1px solid black;
-    height: 8vh;
-    width: 6vw;  
-}
-.button5{
-    border: 1px solid black;
-    height: 8vh;
-    width: 6vw;  
-}
-.button6{
-    border: 1px solid black;
-    height: 8vh;
-    width: 6vw;  
-}
-.button7{
-    border: 1px solid black;
-    height: 8vh;
-    width: 6vw;  
-}
-.button8{
-    border: 1px solid black;
-    height: 8vh;
-    width: 6vw;  
-}
-.button9{
-    border: 1px solid black;
-    height: 8vh;
-    width: 6vw;  
-}
-.button0{
-    border: 1px solid black;
-    height: 8vh;
-    width: 6vw;  
+    height: 50px;
+    width: 50px; 
+    background-color: ivory;
+    box-shadow: black 4px 4px 10px;
+    border-radius: 10px;
+    
 }
 
+.btn:hover, .swagbar:hover, .op-add:hover, .op-divide:hover, .op-multiply:hover, .op-subtract:hover{
+    transform: scale(1.1);
+}
 .clear {
-    border: 1px solid black;
-    width: 6vw;
-    height: 8vh;
-    font-size: 14px;
+    grid-column: 1/4;
+    width:185px
 }
 
-.equals {
-    border: 1px solid black;
-    width: 6vw;
-    height: 8vh;
+.equals{
+    background-color: #DB2700;
 }
+
 .ops {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: stretch;
-    border: 1px solid black;
-    height: 38vh;
-    width: 5vw; 
+    border: 4px solid black;
+    height: 280px;
+    width: 45px; 
     margin-left: 10px;
     text-align: center;
     font-size: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    
 }
 
 .op-subtract {
     border: 1px solid black;
-    height: 6vh;
-    width: 4vw; 
-    margin-left: 3px;
+    height: 50px;
+    width: 38px; 
+    margin-left: 2px;
+    background-color: #ff795c;
+    color: ivory;
+    box-shadow: black 3px 3px 10px;
+    border-radius: 10px;
 }
 
 .op-multiply {
     border: 1px solid black;
-    height: 6vh;
-    width: 4vw; 
-    margin-left: 3px;
+    height: 50px;
+    width: 38px; 
+    margin-left: 2px;
+    background-color: #ff795c;
+    color: ivory;
+    box-shadow: black 3px 3px 10px;
+    border-radius: 10px;
 }
 
 .op-divide {
     border: 1px solid black;
-    height: 6vh;
-    width: 4vw; 
-    margin-left: 3px;
+    height: 50px;
+    width: 38px; 
+    margin-left: 2px;
+    background-color: #ff795c;
+    color: ivory;
+    box-shadow: black 3px 3px 10px;
+    border-radius: 10px;
 }
 
 .op-add {
     border: 1px solid black;
-    height: 12vh;
-    width: 4vw; 
-    margin-left: 3px;
+    height: 80px;
+    width: 38px; 
+    margin-left: 2px;
+    background-color: #ff795c;
+    color: ivory;
+    box-shadow: black 3px 3px 10px;
+    border-radius: 10px;
+    
 }
 
 
 .swagbar {
     border: 1px solid black;
-    height: 3vh;
-    width: 26vw; 
+    height: 30px;
+    width: 180px; 
     margin-left: 3px;
     font-size: 20px;
     text-align: center;
+    background-color: ivory;
+    box-shadow: 1px 1px 10px;
+    border-radius: 10px;
 }
